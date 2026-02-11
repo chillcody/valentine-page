@@ -131,6 +131,8 @@
             font-weight: bold;
             position: relative;
             overflow: hidden;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
         }
 
         .btn-yes {
@@ -439,6 +441,297 @@
             transform: scale(1.1);
             display: inline-block;
         }
+
+        /* Responsive Design - Tablets */
+        @media screen and (max-width: 1024px) {
+            .cat {
+                font-size: 100px;
+            }
+
+            .flower {
+                font-size: 35px;
+                top: 15px;
+                right: -25px;
+            }
+
+            .question {
+                font-size: 40px;
+                margin-bottom: 35px;
+            }
+
+            .btn {
+                padding: 18px 45px;
+                font-size: 24px;
+            }
+
+            .celebration-title {
+                font-size: 56px;
+            }
+
+            .dancing-cat {
+                font-size: 85px;
+            }
+        }
+
+        /* Responsive Design - Small Tablets */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            .cat {
+                font-size: 80px;
+            }
+
+            .flower {
+                font-size: 30px;
+                top: 10px;
+                right: -20px;
+            }
+
+            .question {
+                font-size: 32px;
+                margin-bottom: 30px;
+                padding: 0 20px;
+            }
+
+            .buttons {
+                gap: 20px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                padding: 16px 40px;
+                font-size: 22px;
+                width: 200px;
+            }
+
+            .celebration-title {
+                font-size: 42px;
+                padding: 0 20px;
+                margin-bottom: 40px;
+            }
+
+            .cats-dance-container {
+                gap: 25px;
+            }
+
+            .dancing-cat {
+                font-size: 70px;
+            }
+
+            .credit {
+                font-size: 20px;
+                bottom: 20px;
+            }
+
+            .credit-main {
+                font-size: 16px;
+                bottom: 15px;
+            }
+
+            .heart {
+                font-size: 18px;
+            }
+        }
+
+        /* Responsive Design - Phones */
+        @media screen and (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+
+            .cat-container {
+                margin-bottom: 20px;
+            }
+
+            .cat {
+                font-size: 60px;
+            }
+
+            .flower {
+                font-size: 24px;
+                top: 5px;
+                right: -15px;
+            }
+
+            .question {
+                font-size: 24px;
+                margin-bottom: 25px;
+                padding: 0 15px;
+                line-height: 1.3;
+            }
+
+            .buttons {
+                gap: 15px;
+            }
+
+            .btn {
+                padding: 14px 35px;
+                font-size: 20px;
+                width: 180px;
+            }
+
+            .celebration-title {
+                font-size: 32px;
+                padding: 0 15px;
+                margin-bottom: 30px;
+                line-height: 1.2;
+            }
+
+            .cats-dance-container {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            .dancing-cat {
+                font-size: 50px;
+            }
+
+            .celebration-text {
+                font-size: 48px;
+                padding: 0 20px;
+            }
+
+            .credit {
+                font-size: 16px;
+                bottom: 15px;
+                padding: 0 15px;
+            }
+
+            .credit-main {
+                font-size: 14px;
+                bottom: 10px;
+                padding: 0 15px;
+            }
+
+            .heart {
+                font-size: 16px;
+            }
+
+            .celebration-heart {
+                font-size: 24px;
+            }
+        }
+
+        /* Responsive Design - Small Phones */
+        @media screen and (max-width: 360px) {
+            .cat {
+                font-size: 50px;
+            }
+
+            .flower {
+                font-size: 20px;
+                top: 3px;
+                right: -12px;
+            }
+
+            .question {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            .btn {
+                padding: 12px 30px;
+                font-size: 18px;
+                width: 160px;
+            }
+
+            .celebration-title {
+                font-size: 28px;
+                margin-bottom: 25px;
+            }
+
+            .dancing-cat {
+                font-size: 45px;
+            }
+
+            .celebration-text {
+                font-size: 40px;
+            }
+
+            .credit {
+                font-size: 14px;
+            }
+
+            .credit-main {
+                font-size: 12px;
+            }
+        }
+
+        /* Landscape Orientation for Phones */
+        @media screen and (max-height: 500px) and (orientation: landscape) {
+            .cat-container {
+                margin-bottom: 15px;
+            }
+
+            .cat {
+                font-size: 50px;
+            }
+
+            .flower {
+                font-size: 20px;
+            }
+
+            .question {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+
+            .buttons {
+                gap: 15px;
+            }
+
+            .btn {
+                padding: 10px 25px;
+                font-size: 18px;
+            }
+
+            .celebration-title {
+                font-size: 32px;
+                margin-bottom: 20px;
+            }
+
+            .cats-dance-container {
+                gap: 15px;
+            }
+
+            .dancing-cat {
+                font-size: 45px;
+            }
+        }
+
+        /* Prevent horizontal scroll */
+        @media screen and (max-width: 768px) {
+            body {
+                overflow-x: hidden;
+            }
+
+            .container {
+                max-width: 100%;
+                padding: 0 10px;
+            }
+
+            .btn-no {
+                max-width: 90vw;
+                word-wrap: break-word;
+                white-space: normal;
+                text-align: center;
+            }
+        }
+
+        /* Ensure buttons stay within viewport on mobile */
+        @media screen and (max-width: 480px) {
+            .btn-no {
+                max-width: 85vw;
+                overflow: visible;
+            }
+
+            .buttons {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -517,10 +810,20 @@
                 return;
             }
             
+            // Responsive scaling based on screen width
+            const isMobile = window.innerWidth <= 480;
+            const isTablet = window.innerWidth <= 768 && window.innerWidth > 480;
+            
+            let scaleMultiplier = isMobile ? 0.2 : (isTablet ? 0.25 : 0.3);
+            let paddingMultiplier = isMobile ? 8 : (isTablet ? 9 : 10);
+            let fontSizeMultiplier = isMobile ? 3 : (isTablet ? 3.5 : 4);
+            let baseFontSize = isMobile ? 20 : (isTablet ? 24 : 28);
+            let basePadding = isMobile ? 14 : (isTablet ? 18 : 20);
+            
             // Increase button size progressively
-            const currentScale = 1 + (clickCount * 0.3);
-            const currentPadding = 20 + (clickCount * 10);
-            const currentFontSize = 28 + (clickCount * 4);
+            const currentScale = 1 + (clickCount * scaleMultiplier);
+            const currentPadding = basePadding + (clickCount * paddingMultiplier);
+            const currentFontSize = baseFontSize + (clickCount * fontSizeMultiplier);
             
             this.style.transform = `scale(${currentScale})`;
             this.style.padding = `${currentPadding}px ${currentPadding * 2.5}px`;
@@ -532,13 +835,14 @@
                 this.textContent = noButtonTexts[clickCount];
             } else {
                 // After all texts, make it even bigger and change to final message
-                this.style.transform = `scale(${currentScale + 0.5})`;
+                this.style.transform = `scale(${currentScale + (isMobile ? 0.3 : 0.5)})`;
                 this.textContent = 'so final Yes or yes';
             }
             
-            // Move button slightly to create "strange structure" effect
-            const randomX = (Math.random() - 0.5) * 50;
-            const randomY = (Math.random() - 0.5) * 50;
+            // Move button slightly to create "strange structure" effect (less movement on mobile)
+            const moveAmount = isMobile ? 30 : 50;
+            const randomX = (Math.random() - 0.5) * moveAmount;
+            const randomY = (Math.random() - 0.5) * moveAmount;
             this.style.position = 'relative';
             this.style.left = `${randomX}px`;
             this.style.top = `${randomY}px`;
